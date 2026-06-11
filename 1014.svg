@@ -2,7 +2,7 @@
 <!-- (c) ammap.com | SVG weather icons -->
 <svg width="56" height="48" version="1.1" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <filter id="blur" x="-.24684" y="-.27097" width="1.4937" height="1.6939">
+    <filter id="blur" x="-.20655" y="-.21122" width="1.403" height="1.4997">
       <feGaussianBlur in="SourceAlpha" stdDeviation="3" />
       <feOffset dx="0" dy="4" result="offsetblur" />
       <feComponentTransfer>
@@ -16,76 +16,213 @@
     <style type="text/css">
       <![CDATA[
       /*
-** CLOUDS
+** MOON
 */
-      @keyframes am-weather-cloud-1 {
+      @keyframes am-weather-moon {
         0% {
-          -webkit-transform: translate(-5px, 0px);
-          -moz-transform: translate(-5px, 0px);
-          -ms-transform: translate(-5px, 0px);
-          transform: translate(-5px, 0px);
+          -webkit-transform: rotate(0deg);
+          -moz-transform: rotate(0deg);
+          -ms-transform: rotate(0deg);
+          transform: rotate(0deg);
         }
 
         50% {
-          -webkit-transform: translate(10px, 0px);
-          -moz-transform: translate(10px, 0px);
-          -ms-transform: translate(10px, 0px);
-          transform: translate(10px, 0px);
+          -webkit-transform: rotate(15deg);
+          -moz-transform: rotate(15deg);
+          -ms-transform: rotate(15deg);
+          transform: rotate(15deg);
         }
 
         100% {
-          -webkit-transform: translate(-5px, 0px);
-          -moz-transform: translate(-5px, 0px);
-          -ms-transform: translate(-5px, 0px);
-          transform: translate(-5px, 0px);
+          -webkit-transform: rotate(0deg);
+          -moz-transform: rotate(0deg);
+          -ms-transform: rotate(0deg);
+          transform: rotate(0deg);
         }
       }
 
-      .am-weather-cloud-1 {
-        -webkit-animation-name: am-weather-cloud-1;
-        -moz-animation-name: am-weather-cloud-1;
-        animation-name: am-weather-cloud-1;
-        -webkit-animation-duration: 7s;
-        -moz-animation-duration: 7s;
-        animation-duration: 7s;
+      .am-weather-moon {
+        -webkit-animation-name: am-weather-moon;
+        -moz-animation-name: am-weather-moon;
+        -ms-animation-name: am-weather-moon;
+        animation-name: am-weather-moon;
+        -webkit-animation-duration: 6s;
+        -moz-animation-duration: 6s;
+        -ms-animation-duration: 6s;
+        animation-duration: 6s;
         -webkit-animation-timing-function: linear;
         -moz-animation-timing-function: linear;
+        -ms-animation-timing-function: linear;
         animation-timing-function: linear;
         -webkit-animation-iteration-count: infinite;
         -moz-animation-iteration-count: infinite;
+        -ms-animation-iteration-count: infinite;
         animation-iteration-count: infinite;
+        -webkit-transform-origin: 12.5px 15.15px 0;
+        /* TODO FF CENTER ISSUE */
+        -moz-transform-origin: 12.5px 15.15px 0;
+        /* TODO FF CENTER ISSUE */
+        -ms-transform-origin: 12.5px 15.15px 0;
+        /* TODO FF CENTER ISSUE */
+        transform-origin: 12.5px 15.15px 0;
+        /* TODO FF CENTER ISSUE */
       }
 
-      @keyframes am-weather-cloud-2 {
+      @keyframes am-weather-moon-star-1 {
         0% {
-          -webkit-transform: translate(0px, 0px);
-          -moz-transform: translate(0px, 0px);
-          -ms-transform: translate(0px, 0px);
-          transform: translate(0px, 0px);
-        }
-
-        50% {
-          -webkit-transform: translate(2px, 0px);
-          -moz-transform: translate(2px, 0px);
-          -ms-transform: translate(2px, 0px);
-          transform: translate(2px, 0px);
+          opacity: 0;
         }
 
         100% {
-          -webkit-transform: translate(0px, 0px);
-          -moz-transform: translate(0px, 0px);
-          -ms-transform: translate(0px, 0px);
-          transform: translate(0px, 0px);
+          opacity: 1;
         }
       }
 
-      .am-weather-cloud-2 {
-        -webkit-animation-name: am-weather-cloud-2;
-        -moz-animation-name: am-weather-cloud-2;
-        animation-name: am-weather-cloud-2;
-        -webkit-animation-duration: 3s;
-        -moz-animation-duration: 3s;
-        animation-duration: 3s;
+      .am-weather-moon-star-1 {
+        -webkit-animation-name: am-weather-moon-star-1;
+        -moz-animation-name: am-weather-moon-star-1;
+        -ms-animation-name: am-weather-moon-star-1;
+        animation-name: am-weather-moon-star-1;
+        -webkit-animation-delay: 3s;
+        -moz-animation-delay: 3s;
+        -ms-animation-delay: 3s;
+        animation-delay: 3s;
+        -webkit-animation-duration: 5s;
+        -moz-animation-duration: 5s;
+        -ms-animation-duration: 5s;
+        animation-duration: 5s;
+        -webkit-animation-timing-function: linear;
+        -moz-animation-timing-function: linear;
+        -ms-animation-timing-function: linear;
+        animation-timing-function: linear;
+        -webkit-animation-iteration-count: 1;
+        -moz-animation-iteration-count: 1;
+        -ms-animation-iteration-count: 1;
+        animation-iteration-count: 1;
+      }
+
+      @keyframes am-weather-moon-star-2 {
+        0% {
+          opacity: 0;
+        }
+
+        100% {
+          opacity: 1;
+        }
+      }
+
+      .am-weather-moon-star-2 {
+        -webkit-animation-name: am-weather-moon-star-2;
+        -moz-animation-name: am-weather-moon-star-2;
+        -ms-animation-name: am-weather-moon-star-2;
+        animation-name: am-weather-moon-star-2;
+        -webkit-animation-delay: 5s;
+        -moz-animation-delay: 5s;
+        -ms-animation-delay: 5s;
+        animation-delay: 5s;
+        -webkit-animation-duration: 4s;
+        -moz-animation-duration: 4s;
+        -ms-animation-duration: 4s;
+        animation-duration: 4s;
+        -webkit-animation-timing-function: linear;
+        -moz-animation-timing-function: linear;
+        -ms-animation-timing-function: linear;
+        animation-timing-function: linear;
+        -webkit-animation-iteration-count: 1;
+        -moz-animation-iteration-count: 1;
+        -ms-animation-iteration-count: 1;
+        animation-iteration-count: 1;
+      }
+
+      /*
+** FROST
+*/
+      @keyframes am-weather-frost {
+        0% {
+          -webkit-transform: translate(0.0px, 0.0px);
+          -moz-transform: translate(0.0px, 0.0px);
+          -ms-transform: translate(0.0px, 0.0px);
+          transform: translate(0.0px, 0.0px);
+        }
+
+        1% {
+          -webkit-transform: translate(0.3px, 0.0px);
+          -moz-transform: translate(0.3px, 0.0px);
+          -ms-transform: translate(0.3px, 0.0px);
+          transform: translate(0.3px, 0.0px);
+        }
+
+        3% {
+          -webkit-transform: translate(-0.3px, 0.0px);
+          -moz-transform: translate(-0.3px, 0.0px);
+          -ms-transform: translate(-0.3px, 0.0px);
+          transform: translate(-0.3px, 0.0px);
+        }
+
+        5% {
+          -webkit-transform: translate(0.3px, 0.0px);
+          -moz-transform: translate(0.3px, 0.0px);
+          -ms-transform: translate(0.3px, 0.0px);
+          transform: translate(0.3px, 0.0px);
+        }
+
+        7% {
+          -webkit-transform: translate(-0.3px, 0.0px);
+          -moz-transform: translate(-0.3px, 0.0px);
+          -ms-transform: translate(-0.3px, 0.0px);
+          transform: translate(-0.3px, 0.0px);
+        }
+
+        9% {
+          -webkit-transform: translate(0.3px, 0.0px);
+          -moz-transform: translate(0.3px, 0.0px);
+          -ms-transform: translate(0.3px, 0.0px);
+          transform: translate(0.3px, 0.0px);
+        }
+
+        11% {
+          -webkit-transform: translate(-0.3px, 0.0px);
+          -moz-transform: translate(-0.3px, 0.0px);
+          -ms-transform: translate(-0.3px, 0.0px);
+          transform: translate(-0.3px, 0.0px);
+        }
+
+        13% {
+          -webkit-transform: translate(0.3px, 0.0px);
+          -moz-transform: translate(0.3px, 0.0px);
+          -ms-transform: translate(0.3px, 0.0px);
+          transform: translate(0.3px, 0.0px);
+        }
+
+        15% {
+          -webkit-transform: translate(-0.3px, 0.0px);
+          -moz-transform: translate(-0.3px, 0.0px);
+          -ms-transform: translate(-0.3px, 0.0px);
+          transform: translate(-0.3px, 0.0px);
+        }
+
+        16% {
+          -webkit-transform: translate(0.0px, 0.0px);
+          -moz-transform: translate(0.0px, 0.0px);
+          -ms-transform: translate(0.0px, 0.0px);
+          transform: translate(0.0px, 0.0px);
+        }
+
+        100% {
+          -webkit-transform: translate(0.0px, 0.0px);
+          -moz-transform: translate(0.0px, 0.0px);
+          -ms-transform: translate(0.0px, 0.0px);
+          transform: translate(0.0px, 0.0px);
+        }
+      }
+
+      .am-weather-frost {
+        -webkit-animation-name: am-weather-frost;
+        -moz-animation-name: am-weather-frost;
+        animation-name: am-weather-frost;
+        -webkit-animation-duration: 1.11s;
+        -moz-animation-duration: 1.11s;
+        animation-duration: 1.11s;
         -webkit-animation-timing-function: linear;
         -moz-animation-timing-function: linear;
         animation-timing-function: linear;
@@ -96,18 +233,37 @@
       ]]>
     </style>
   </defs>
-  <g id="cloudy" transform="translate(16,-2)" filter="url(#blur)">
-    <g class="am-weather-cloud-1"
-      style="-moz-animation-duration:7s;-moz-animation-iteration-count:infinite;-moz-animation-name:am-weather-cloud-1;-moz-animation-timing-function:linear;-webkit-animation-duration:7s;-webkit-animation-iteration-count:infinite;-webkit-animation-name:am-weather-cloud-1;-webkit-animation-timing-function:linear">
-      <path transform="matrix(.6 0 0 .6 -10 -8)"
-        d="m47.7 35.4c0-4.6-3.7-8.2-8.2-8.2-1 0-1.9 0.2-2.8 0.5-0.3-3.4-3.1-6.2-6.6-6.2-3.7 0-6.7 3-6.7 6.7 0 0.8 0.2 1.6 0.4 2.3-0.3-0.1-0.7-0.1-1-0.1-3.7 0-6.7 3-6.7 6.7 0 3.6 2.9 6.6 6.5 6.7h17.2c4.4-0.5 7.9-4 7.9-8.4z"
-        fill="#91c0f8" stroke="#fff" stroke-linejoin="round" stroke-width="1.2" />
+  <g transform="translate(16,-2)" filter="url(#blur)">
+    <g transform="matrix(.8 0 0 .8 16 4)">
+      <g class="am-weather-moon-star-1"
+        style="-moz-animation-delay:3s;-moz-animation-duration:5s;-moz-animation-iteration-count:1;-moz-animation-name:am-weather-moon-star-1;-moz-animation-timing-function:linear;-ms-animation-delay:3s;-ms-animation-duration:5s;-ms-animation-iteration-count:1;-ms-animation-name:am-weather-moon-star-1;-ms-animation-timing-function:linear;-webkit-animation-delay:3s;-webkit-animation-duration:5s;-webkit-animation-iteration-count:1;-webkit-animation-name:am-weather-moon-star-1;-webkit-animation-timing-function:linear">
+        <polygon points="4 4 3.3 5.2 2.7 4 1.5 3.3 2.7 2.7 3.3 1.5 4 2.7 5.2 3.3" fill="#ffc04a"
+          stroke-miterlimit="10" />
+      </g>
+      <g class="am-weather-moon-star-2"
+        style="-moz-animation-delay:5s;-moz-animation-duration:4s;-moz-animation-iteration-count:1;-moz-animation-name:am-weather-moon-star-2;-moz-animation-timing-function:linear;-ms-animation-delay:5s;-ms-animation-duration:4s;-ms-animation-iteration-count:1;-ms-animation-name:am-weather-moon-star-2;-ms-animation-timing-function:linear;-webkit-animation-delay:5s;-webkit-animation-duration:4s;-webkit-animation-iteration-count:1;-webkit-animation-name:am-weather-moon-star-2;-webkit-animation-timing-function:linear">
+        <polygon transform="translate(20,10)" points="4 4 3.3 5.2 2.7 4 1.5 3.3 2.7 2.7 3.3 1.5 4 2.7 5.2 3.3"
+          fill="#ffc04a" stroke-miterlimit="10" />
+      </g>
+      <g class="am-weather-moon"
+        style="-moz-animation-duration:6s;-moz-animation-iteration-count:infinite;-moz-animation-name:am-weather-moon;-moz-animation-timing-function:linear;-moz-transform-origin:12.5px 15.15px 0;-ms-animation-duration:6s;-ms-animation-iteration-count:infinite;-ms-animation-name:am-weather-moon;-ms-animation-timing-function:linear;-ms-transform-origin:12.5px 15.15px 0;-webkit-animation-duration:6s;-webkit-animation-iteration-count:infinite;-webkit-animation-name:am-weather-moon;-webkit-animation-timing-function:linear;-webkit-transform-origin:12.5px 15.15px 0">
+        <path
+          d="m14.5 13.2c0-3.7 2-6.9 5-8.7-1.5-0.9-3.2-1.3-5-1.3-5.5 0-10 4.5-10 10s4.5 10 10 10c1.8 0 3.5-0.5 5-1.3-3-1.7-5-5-5-8.7z"
+          fill="#ffc04a" stroke="#ffc04a" stroke-linejoin="round" stroke-width="2" />
+      </g>
     </g>
-    <g class="am-weather-cloud-2"
-      style="-moz-animation-duration:3s;-moz-animation-iteration-count:infinite;-moz-animation-name:am-weather-cloud-2;-moz-animation-timing-function:linear;-webkit-animation-duration:3s;-webkit-animation-iteration-count:infinite;-webkit-animation-name:am-weather-cloud-2;-webkit-animation-timing-function:linear">
-      <path transform="translate(-20,-11)"
-        d="m47.7 35.4c0-4.6-3.7-8.2-8.2-8.2-1 0-1.9 0.2-2.8 0.5-0.3-3.4-3.1-6.2-6.6-6.2-3.7 0-6.7 3-6.7 6.7 0 0.8 0.2 1.6 0.4 2.3-0.3-0.1-0.7-0.1-1-0.1-3.7 0-6.7 3-6.7 6.7 0 3.6 2.9 6.6 6.5 6.7h17.2c4.4-0.5 7.9-4 7.9-8.4z"
-        fill="#57a0ee" stroke="#fff" stroke-linejoin="round" stroke-width="1.2" />
+    <g transform="translate(-16,4)">
+      <g class="am-weather-frost" stroke="#57a0ee" transform="translate(0,2)" fill="none" stroke-width="2"
+        stroke-linecap="round"
+        style="-moz-animation-duration:1.11s;-moz-animation-iteration-count:infinite;-moz-animation-name:am-weather-frost;-moz-animation-timing-function:linear;-webkit-animation-duration:1.11s;-webkit-animation-iteration-count:infinite;-webkit-animation-name:am-weather-frost;-webkit-animation-timing-function:linear">
+        <path d="M11,32H45" />
+        <path d="M15.5,37H40.5" />
+        <path d="M22.5,42H33.5" />
+      </g>
+      <g>
+        <path stroke="#57a0ee" transform="translate(0,0)" fill="none" stroke-width="2" stroke-linecap="round"
+          d="M28,31V9M28,22l11,-3.67M34,20l2,-4M34,20l4,2M28,22l-11,-3.67M22,20l-2,-4M22,20l-4,2M28,14.27l3.01,-3.02M28,14.27l-3.01,-3.02" />
+      </g>
     </g>
   </g>
 </svg>
