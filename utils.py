@@ -120,22 +120,22 @@ class VaisalaIconURL:
     }
 
     @classmethod
-    def get_icon_url(cls, code) -> str:
-        code_str = str(code)
-
-        # Ensure the string is 5 characters long by padding at the end
-        code_str = code_str.ljust(5, '0')
-
-        # remove last digit due to old api add 1 or 0 to determine if night or day. Not needed here
-        key = code_str[:-1] 
-
+    def _get_icon_name(cls, code: str | int) -> str:
+        """Internal helper to resolve code to icon name incase of 4 characters"""
+        # Normalize and pad: 1001 -> "10010" -> "1001"
+        key = str(code).ljust(5, '0')[:-1]
+        
         icon_name = cls.ICON_MAP.get(key)
-        if icon_name is None:
+        if not icon_name:
             raise ValueError(f"Unknown icon code: {code} (stripped key {key})")
+        return icon_name
 
-        filename = f"{icon_name}.png"
-        return f"{cls.BASE_URL}/{filename}"
-
+    @classmethod
+    def get_icon_url(cls, code: str | int, scale: int = 1) -> str:
+        """Returns the URL for a given icon code and scale."""
+        icon_name = cls._get_icon_name(code)
+        suffix = "@2x" if scale == 2 else ""
+        return f"{cls.BASE_URL}/{icon_name}{suffix}.png"
 
 
 # Sample
