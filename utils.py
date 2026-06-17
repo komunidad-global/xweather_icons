@@ -131,8 +131,6 @@ class VaisalaIconURL:
 
         icon_name = cls.ICON_MAP.get(key)
         if icon_name is None:
-            # fallback to "na" icon
-            icon_name = "na"
             raise ValueError(f"Unknown icon code: {code} (stripped key {key})")
 
         filename = f"{icon_name}.png"
