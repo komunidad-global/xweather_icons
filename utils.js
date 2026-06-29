@@ -1,6 +1,6 @@
 
 class VaisalaIconURL {
-  static BASE_URL = "https://raw.githubusercontent.com/komunidad-global/xweather_icons/main";
+  static BASE_URL = "https://raw.githubusercontent.com/komunidad-global/xweather_icons/main/icons";
 
   static ICON_MAP = {
     "1001": "blizzard",
